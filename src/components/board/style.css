@@ -1,0 +1,46 @@
+.board-wrapper {
+  display: flex;
+  margin: auto;
+}
+
+.board {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 4px solid rgb(10, 154, 243);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.board .tile:nth-child(1) {
+  border-right: 2px solid rgb(10, 154, 243);
+  border-bottom: 2px solid rgb(10, 154, 243);
+}
+
+.board .tile:nth-child(2) {
+  border-left: 2px solid rgb(10, 154, 243);
+  border-bottom: 2px solid rgb(10, 154, 243);
+}
+
+.board .tile:nth-child(3) {
+  border-right: 2px solid rgb(10, 154, 243);
+  border-top: 2px solid rgb(10, 154, 243);
+}
+
+.board .tile:nth-child(4) {
+  border-top: 2px solid rgb(10, 154, 243);
+  border-left: 2px solid rgb(10, 154, 243);
+}
+
+.pannel {
+  margin-left: 50px;
+}
+
+.pannel-item {
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 4px solid rgb(250, 153, 237);
+  border-radius: 20px;
+  background: white;
+}

@@ -1,0 +1,38 @@
+.tile {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tile-normal {
+  background-color: white;
+}
+
+.tile-normal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  opacity: .7;
+}
+
+.tile-failure {
+  background-color: rgb(243, 149, 112);
+}
+
+.tile-success {
+  background-color: rgb(55, 245, 213);
+}
+
+.icon {
+  position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+}
